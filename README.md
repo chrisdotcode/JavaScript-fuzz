@@ -45,6 +45,12 @@ console.log(random());
 
 Returns a random value.  Omits functions if `options.functions` is `false`.
 
+### random.nonNaN([options])
+
+Returns a random value that is not `NaN`. Takes the same `options` argument as
+`random()`. Useful for testing random values that need to have self-referential
+equality (because `NaN` does not).
+
 ### random.undefined()
 
 Returns `undefined`.
